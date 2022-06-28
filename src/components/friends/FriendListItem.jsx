@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-export const FriendListItem = ({friend}) => {
+export const FriendListItem = ({ friend}) => {
     
     const { avatar, name, isOnline} = friend;
     
@@ -14,7 +14,6 @@ export const FriendListItem = ({friend}) => {
   
 }
 FriendListItem.propTypes = {
-   
     friend: PropTypes.shape({
         avatar: PropTypes.string.isRequired,
         name: PropTypes.string.isRequired,
