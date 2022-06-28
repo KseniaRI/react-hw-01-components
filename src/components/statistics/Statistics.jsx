@@ -1,10 +1,12 @@
-export const Statistics = ({ datas, title=null}) => {
+import PropTypes from 'prop-types';
+
+export const Statistics = ({ stats, title }) => {
     
     return (
     <>   
-        <h2 className="title">{title}</h2>   
+        {title && <h2 className="title">{title}</h2>}   
         <ul className="statistics">
-           {datas.map(data => {
+           {stats.map(data => {
                const { id, label, percentage } = data;
                return (
                    <li key={id} className="item">
@@ -17,4 +19,13 @@ export const Statistics = ({ datas, title=null}) => {
         </ul>
     </> 
   );
+}
+
+Statistics.propTypes = {
+    title: PropTypes.string,
+    stats: PropTypes.arrayOf(PropTypes.shape({
+         id: PropTypes.string.isRequired,
+         label: PropTypes.string.isRequired,
+         percentage: PropTypes.number.isRequired,
+    })),
 }
