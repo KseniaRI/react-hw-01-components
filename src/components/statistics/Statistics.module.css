@@ -1,11 +1,11 @@
 .statisticsWrap{
-margin: 0 auto;
-    width: 280px;
+    margin: 0 auto;
+    width: 430px;
     border-radius: 4px;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
         0px 2px 1px 0px rgba(0, 0, 0, 0.2);
-        padding-top: 20px;
-        margin-bottom: 30px;
+    padding-top: 20px;
+    margin-bottom: 30px;
 }
 .title{
     text-align: center;
@@ -21,12 +21,12 @@ margin: 0 auto;
 }
 .statistics li{
     display: flex;
-        flex-basis: calc(100% / 5);
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-top: 10px;
-        padding-bottom: 10px;
+    flex-basis: calc(100% / 5);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .statistics li:first-child{
@@ -43,6 +43,10 @@ background-color: blueviolet;
 }
 .statistics li:nth-child(4){
     background-color: coral;
+}
+.statistics li:hover,
+.statistics li:focus {
+    opacity: 0.5;
 }
 .label {
     font-size: 12px;

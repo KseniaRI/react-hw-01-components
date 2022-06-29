@@ -1,6 +1,6 @@
 .transaction{
     margin: 0 auto;
-    width: 280px;
+    width: 430px;
     border-radius: 4px;
     border-collapse: collapse;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
@@ -26,6 +26,10 @@ td{
 }
 td:not(:last-child){
 border-right: 2px solid rgba(233, 232, 232, 0.5);
+}
+td:hover,
+td:focus {
+    background-color: aliceblue;
 }
 th{
     color: #fff;

@@ -1,6 +1,6 @@
 .friendsList{
     margin: 0 auto;
-        width: 280px;
+        width: 430px;
         margin-bottom: 30px;
 }
 .item{
@@ -12,6 +12,10 @@
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 10px;
+}
+.item:hover,
+.item:focus {
+    background-color: aliceblue;
 }
 .item + .item{
 margin-top: 10px;
