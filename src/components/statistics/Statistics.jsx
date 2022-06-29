@@ -1,23 +1,24 @@
 import PropTypes from 'prop-types';
+import css from './Statistics.module.css';
 
 export const Statistics = ({ stats, title }) => {
     
     return (
-    <>   
-        {title && <h2 className="title">{title}</h2>}   
-        <ul className="statistics">
+    <div className={css.statisticsWrap}>   
+        {title && <h2 className={css.title}>{title}</h2>}   
+        <ul className={css.statistics}>
            {stats.map(data => {
                const { id, label, percentage } = data;
                return (
                    <li key={id} className="item">
-                       <span className="label">{label}</span>
-                       <span className="percentage">{percentage}</span>
+                       <span className={css.label}>{label}</span>
+                       <span className={css.percentage}>{percentage}%</span>
                    </li>
                )
            })
            }
         </ul>
-    </> 
+    </div> 
   );
 }
 
